@@ -23,12 +23,16 @@ Install dependencies required for building on Debian-based Linux distributions:
 ```
 apt-get install build-essential autoconf autoconf-archive automake autotools-dev libgtk-3-dev libsdl2-dev libepoxy-dev libarchive-dev zlib1g-dev
 ```
+Optional dependencies:
+```
+apt-get install libnotcurses-dev
+```
 
 ## Building
 To build using Autotools (optional arguments in square brackets):
 ```
 autoreconf -vif
-./configure [--enable-gui] [--enable-doc]
+./configure [--enable-tui] [--enable-gui] [--enable-doc]
 make
 ```
 Optionally:
